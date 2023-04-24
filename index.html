@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Chocolate</title>
+    <style>
+      h1 {
+        text-align: center;
+        font-size: 46px;
+        margin: 0 auto;
+        padding: 10px 0;
+        font-weight: bold;
+        font-style: italic;
+        color: #bb5a5a;
+      }
+
+      h2 {
+        text-align: center;
+        font-size: 34px;
+        font-style: italic;
+        font-weight: 300px;
+        color: #e79e85;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 50%;
+      }
+
+      h3 {
+        text-align: center;
+        color: #bb5a5a;
+        margin: 0 auto;
+        padding: 10px;
+        font-size: 32px;
+        font-weight: 900;
+      }
+
+      h4 {
+        text-align: center;
+        color: #bb5a5a;
+        margin: 0 auto;
+        padding: 10px;
+        font-size: 32px;
+      }
+
+      p {
+        line-height: 1.5;
+        font-size: 20px;
+        margin: 10px ;
+        
+      }
+
+      
+      span {
+        display: block;
+        text-align: center;
+        padding: 30px 0 0 0;
+      }
+
+      button {
+        display: block;
+        text-align: center;
+        font-size: 22px;
+        padding: 15px 20px;
+        border: 4px solid #bb5a5a;
+        border-radius: 20px;
+        margin: 50px auto;
+        color: #eaceb4;
+        background-color: #bb5a5a;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      }
+
+      button:hover {
+        background-color: #eaceb4;
+        color: #bb5a5a;
+        transition: 200ms all ease-in-out;
+        cursor: pointer;
+      }
+
+      
+
+      .coded {
+        background-color: white;
+        text-align: center;
+        display: block;
+        color: rgba(0, 0, 0, 0.3);
+      }
+
+      .container {
+        border: 1px solid white;
+        border-radius: 20px;
+        background: #f2e9d0;
+        padding:  30px 10px;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .more-info {
+        text-align: center;
+        margin: 20px;
+      }
+
+   
+
+
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>I love chocolate</h1>
+      <h2>What is chocolate and how is it being created?</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/047/908/original/Chocolate_Banner_EHL.jpg?1665309856"
+        alt="chocolate"
+      />
+      <h3>The cacao beans</h3>
+      <p>
+        The fruit of the cocoa tree is the cocoa pod which contains cocoa beans.
+        After being harvested, the beans are going through a Fermentation
+        process and drying process which takes in total around 3 weeks. Those
+        process are giving the cocoa beans less bitter flavor and lowers their
+        humidity level so they could be kept for long time and be transported.
+        Before being transported, the beans undergo a quality check. They are
+        then being pounded and stomped to remove the shells. The beans, which
+        from then on are considered "tradable cocoa", are being shipped by boat
+        and delivered to the processing countries.
+      </p>
+      <h4>The chocolate process</h4>
+      <p>
+        The beans are getting roasted and then grounded into a dough. The dough
+        is kneaded in a machine and a thick paste is formed - that is the cocoa
+        mass. It is the main ingredient in chocolate. The cocoa mass is the raw
+        material for cocoa powder, cocoa butter and chocolate. The cocoa mass
+        contains about 55% fat. That fat is the cocoa butter, and it is pressed
+        from the mass. There remains a dry, rock hard chocolate cake that
+        contains 10 to 24 percent fat. This is ground into cocoa powder. So,
+        what's in the chocolate that we're going to eat? </br> </br>
+        <p>
+        Dark chocolate- cocoa mass + sugar.<br />
+        Milk chocolate-cocoa mass + milk powder + sugar.<br />
+        White chocolate- cocoa butter + milk powder + sugar . <br /><br /></p>
+      </p>
+      <hr />
+      <div class="more-info">
+        Read more for free on
+        <a href="https://en.wikipedia.org/wiki/Chocolate" target="_blank"
+          >wikipedia</a
+        >
+      </div>
+      <div class="more-info">
+        Want to take a course?
+        <a
+          href="https://www.chocolateacademy.online/collections/trial-courses"
+          target="_blank"
+          >Chocolate academy free trial courses</a
+        >
+      </div>
+      <button>Get your own <br />chocolate starter kit!</button>
+    </div>
+    <div class="coded">Coded by Yarden Segal</div>
+    <script>
+      function getYourOwn() {
+        let name = prompt("What is your name?");
+        let whichChocolate = prompt(
+          "What is your favorite? white, milk or dark chocolate?"
+        ).toLowerCase();
+
+        if (
+          whichChocolate === "milk" ||
+          whichChocolate === "white" ||
+          whichChocolate === "dark"
+        ) {
+          alert(
+            `Hello ${name}, your ${whichChocolate} chocolate kit is on the way!`
+          );
+        } else {
+          alert("No answer? no chocolate kit for you! 😕");
+        }
+      }
+
+      let getIt = document.querySelector("button");
+      getIt.addEventListener("click", getYourOwn);
+    </script>
+  </body>
+</html>
